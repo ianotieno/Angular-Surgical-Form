@@ -1,11 +1,6 @@
 <ng-container [formGroup]="form">
-    <mat-form-field class="full-width">
-      <mat-label>{{ label }}</mat-label>
-      <input
-        [formControlName]="name"
-        matInput
-        [placeholder]="placeHolder"
-      />
+    <mat-form-field [ngStyle]="{'width': '100%'}" appearance="fill" class="full-width">
+        <mat-label>{{ label }}</mat-label>
+        <textarea [formControlName]="name" matInput [placeholder]="placeHolder"></textarea>
     </mat-form-field>
-  </ng-container>
-  
+</ng-container>
