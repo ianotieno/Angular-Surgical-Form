@@ -22,6 +22,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { TitleComponent } from './components/form/title/title.component';
 import { InputsComponent } from './components/form/inputs/inputs.component';
+import { CheckboxComponent } from './components/form/inputs/checkbox/checkbox.component';
+import { DateComponent } from './components/form/inputs/date/date.component';
+import { DateRangeComponent } from './components/form/inputs/date-range/date-range.component';
+import { GroupedInputsComponent } from './components/form/inputs/grouped-inputs/grouped-inputs.component';
+import { RadiosComponent } from './components/form/inputs/radios/radios.component';
+import { TextComponent } from './components/form/inputs/text/text.component';
+import { TextareaComponent } from './components/form/inputs/textarea/textarea.component';
 
 
 
@@ -33,6 +40,13 @@ import { InputsComponent } from './components/form/inputs/inputs.component';
     SurgicalFormComponent,
     TitleComponent,
     InputsComponent,
+    CheckboxComponent,
+    DateComponent,
+    DateRangeComponent,
+    GroupedInputsComponent,
+    RadiosComponent,
+    TextComponent,
+    TextareaComponent,
   ],
   imports: [
     BrowserModule,

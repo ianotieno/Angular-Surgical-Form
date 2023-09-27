@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input} from '@angular/core';
 
 @Component({
   selector: 'app-inputs',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./inputs.component.css']
 })
 export class InputsComponent {
-
+  @Input() form!: FormGroup;
+  @Input() formContent!: Record<any, any>;
 }
