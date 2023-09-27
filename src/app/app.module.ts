@@ -20,6 +20,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { TitleComponent } from './components/form/title/title.component';
+import { InputsComponent } from './components/form/inputs/inputs.component';
 
 
 
@@ -29,6 +31,8 @@ import {MatIconModule} from '@angular/material/icon';
     HeaderComponent,
     FormComponent,
     SurgicalFormComponent,
+    TitleComponent,
+    InputsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
+  @Input() title!: string;
+  @Input() form!: FormGroup;
+  @Input() formContents!: any[];
 
+  onSave() {
+    this.form.markAllAsTouched();
+    console.log(this.form.value);
+  }
 }
