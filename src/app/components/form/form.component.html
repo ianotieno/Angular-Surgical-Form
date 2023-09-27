@@ -6,12 +6,12 @@
   
       <mat-card-content>
         <ng-container *ngFor="let content of formContents">
-          <app-form-title
+          <app-title
             *ngIf="content.type === 'sectionTitle'"
             [title]="content.title"
             [color]="content.color"
           >
-          </app-form-title>
+          </app-title>
           <app-inputs
             *ngIf="content.type !== 'sectionTitle'"
             [form]="form"
