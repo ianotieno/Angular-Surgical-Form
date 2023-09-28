@@ -8,6 +8,7 @@ import { FormContent } from 'src/app/interfaces/form-content';
   styleUrls: ['./surgical-form.component.css']
 })
 export class SurgicalFormComponent {
+
   constructor(private formBuilder: FormBuilder) { }
 
   formContents: Array<FormContent> = [
@@ -19,7 +20,7 @@ export class SurgicalFormComponent {
     { type: 'text', name: 'IdNo', placeHolder: 'Patients ID No/Birth Cert/Notification No:', label: 'Patients ID No/Birth Cert/Notification No:' },
     { type: 'text', name: 'PhoneNo', placeHolder: 'Patients Phone No:', label: 'Patients Phone No:' },
     {type: 'checkbox', name: 'Relationship', label: "Relationship to Principal Member: ", options: [
-      {value: 'Self',  label: 'Self: ',  checked: false},
+      {value: 'Self',  label: 'Self',  checked: false},
       {value: 'Spouse',  label: 'Spouse',  checked: false},
       {value: 'Child', label: 'Child',  checked: false},
     ]},
@@ -134,10 +135,10 @@ export class SurgicalFormComponent {
 
     {type: 'sectionTitle', title: 'Notice: '},
     {type: 'sectionTitle', title: 'Any person/institution who/which knowingly files a statement of request or claim containing any misrepresentation or false, incomplete, or misleading information may be guilty of medical fraud punishable under law or as per the statutes of NHIF operation.'},
-    {type: 'sectionTitle', title: 'All fields in this form are mandatory and  MUST be completed to inform pre-a"uthorization decision.'},
-    {type: 'sectionTitle', title: 'Clinical justification and result of preliminary diagnostic examinations, where necessary, shall accompany the request.'},
-    {type: 'sectionTitle', title: 'Payment for services rendered is subject to verification of outcomes of care and beneficiary eligibility as at the date of service provision. Contractual obligations with the provider take precedence.'},
-    {type: 'sectionTitle', title: 'Medical co-insurance declaration is Mandatory. failure to which approval will be withheld or monies recovered in case of falsification to obtain benefits.'},
+    {type: 'sectionTitle', title: '*All fields in this form are mandatory and  MUST be completed to inform pre-authorization decision.'},
+    {type: 'sectionTitle', title: '*Clinical justification and result of preliminary diagnostic examinations, where necessary, shall accompany the request.'},
+    {type: 'sectionTitle', title: '*Payment for services rendered is subject to verification of outcomes of care and beneficiary eligibility as at the date of service provision. Contractual obligations with the provider take precedence.'},
+    {type: 'sectionTitle', title: '*Medical co-insurance declaration is Mandatory. failure to which approval will be withheld or monies recovered in case of falsification to obtain benefits.'},
     {type: 'sectionTitle', title: 'PATIENT OR AUTHORISED PERSONS DECLARATION:'},
     {type: 'sectionTitle', title: 'This declaration provides that the Principal member and beneficiary details are accurate and complete as per the form. that the medical information and treatment plan herein is accurate and can be utilized for medical insurance purposes.'},
     {type: 'sectionTitle', title: 'HOSPITAL DECLARATION:'},

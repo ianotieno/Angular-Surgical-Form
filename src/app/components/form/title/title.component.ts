@@ -7,5 +7,5 @@ import { Component,Input} from '@angular/core';
 })
 export class TitleComponent {
   @Input() title!: string;
-  @Input() color: string = 'grey';
+  @Input() color: string = 'gray';
 }
